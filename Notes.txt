@@ -1,0 +1,7 @@
+1. Browser sends a request to a web server which is a computer connected to the internet. The server sends a response back
+    to the client's browser which contains all the website code which is then rendered inside the browser to display a website.
+
+2. Static websites are the websites where files are sent from the server to the browser as is without any data manipulation.
+
+3. HTML contains the content of the website. CSS applies style to the content. Javascript is responsible for adding functionality
+    to the website (Making the website alive).
