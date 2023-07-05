@@ -5,3 +5,27 @@
 
 3. HTML contains the content of the website. CSS applies style to the content. Javascript is responsible for adding functionality
     to the website (Making the website alive).
+
+4. HTML (Hyper Text Markup Language) is a language that is used to describe the structure and content of webpage. It is 
+    not a programming language. Web Browsers understands HTML and renders HTML code as websites.
+
+5.
+    <!DOCTYPE html>         : Tells the browser that this document uses HTML
+    <html>                  : Every HTML documents starts with HTML tag
+        <head></head>       : Head contains tags about the webpage that is not visible. Like title and css links.
+        <body></body>       : Body is for all the elements that are visible on the page
+    </html>
+
+6. HTML5 uses strong instead of b element, em instead of i element. Use of newer elements is advised in HTML5. Its because
+    b dosen't have any semantic meaning.
+
+7. Use target = _blank attribute to open a page in a new window and target = _self to open a page inside current window.
+
+8. Structuring HTML page:
+    1. User <header> for header of page.
+    2. Use <nav> to group together navigational elements.
+    3. Use <article> for body of the content.
+    4. Use <footer> for the footer of the page.
+    5. Use <aside> for secondary information that complements the main information.
+
+9. Semantic HTML is used to assign some meaning to content instead of just using div element for everything.
