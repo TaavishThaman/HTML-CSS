@@ -1,0 +1,49 @@
+body {
+    border : 5px solid black;
+    font-family : sans-serif;
+}
+
+.heading {
+    text-align: center;
+    background-color: #DDD;
+    text-transform: uppercase;
+}
+
+.price{
+    font-weight: 900;
+}
+
+.shipping {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+a:link {
+    color: #000;
+}
+
+a:visited {
+    color: #000;
+}
+
+a:hover {
+    color: #555;
+    text-decoration: none;
+}
+
+a:active {
+    color : #444;
+}
+
+.details-heading {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.btn {
+    border-radius : 0;
+    background-color: #000;
+    color: #CCC;
+    border-width : 0;
+    text-transform: uppercase;
+}

@@ -1,3 +1,5 @@
+HTML (HyperText Markup Language)
+
 1. Browser sends a request to a web server which is a computer connected to the internet. The server sends a response back
     to the client's browser which contains all the website code which is then rendered inside the browser to display a website.
 
@@ -29,3 +31,75 @@
     5. Use <aside> for secondary information that complements the main information.
 
 9. Semantic HTML is used to assign some meaning to content instead of just using div element for everything.
+
+
+CSS Fundamentals
+
+1.
+    Selector--> h1 {
+Declaration Block-->  [
+           Property-->  color : blue; <-- Value
+                        [text-align : center;] <-- Declaration / Style
+                        font-size : 20px;
+                      ]  
+                }
+
+2. Types of CSS styling
+    1. Inline CSS : Define CSS inside the tag.
+    2. Internal CSS : Define CSS inside head tag inside style tag.
+    3. External CSS : Define CSS in an external file and import that file inside the head tag.
+
+3. Text Properties
+    1. font-size : Specify the size of font in px, em etc.
+    2. font-family : Specify the family of font to use for an element. eg : sans-serif
+    3. font-style : Give style to the font eg : bold, italic etc.
+    4. line-height : A number without units. Creates space between lines of text equal to the number times font size.
+    5. text-transform : Transforms the text eg : uppercase, capitalize etc.
+    6. text-align : Aligns the text with respect to its parent element. eg : text-align : center
+
+5. Combining Selectors
+    1. p, li, h1 : Use , to apply same style to all the selectors.
+    2. Descendant selector : Use space between selectors to select all the elements inside the parent selector. 
+    eg: article header p {}. article->header->p.
+
+6. Class and Id Selectors
+    1. Use id="id_name" inside an element to use an id selector. Use #id_name to query it.
+    2. Use class="class_name" inside an element to use a class selector. Use #class_name to query it.
+    3. Difference between class and id selector is that id selector can only be used once and class selector can 
+    be used multiple times.
+    4. In real world we always use class instead of id because we are prepared for the future as classes can be reused.
+
+7. Working with Colors
+    1. RGBA or RGB rgba(244, 179, 63, 0.7) and Hexadecimal #f4b33f are two ways of defining colors in CSS. If we want
+    transparencey then rgba must be used. Otherwise in real world we prefer hex notation.
+    2. border : 5px solid blue; Applies border of width 5px all around the element.
+        border-top : 5px solid red; Applies border of width 5px to the top of the element.
+        border-width, border-style, border-color can be used individually too.
+
+8. Pseudo Classes
+    1. li:first-child selects the first child among all the elements which have a li tag.
+    2. li:last-child selects the last child among all the elements which have a li tag.
+    3. li:nth-child(n) selects the nth child among the elements. You can also pass odd or 
+    even inside the arguments which will then select all odd or even elements.
+    4. Descendant selector and Pseudo classes can be combined. eg : article p:first-child {}
+    will select the first paragraph inside the article tag.
+
+9. Styling Hyperlinks
+    1. a:link is used to style links which have a href.
+    2. a:visited is used to style visited links.
+    3. a:hover is used to style hover link.
+    4. a:active is used to style the link that is being clicked.
+    5. Remember this by using LVHA notation.
+
+10. Conflicts between selectors
+    1. Highest to Lowest Priority : 
+    !important -> Inline Style -> Id Selector -> Class Selector or Pseudoclass -> Element Selector -> Universal Selector.
+    2. The styles which are crossed out in developer tools are the ones which are overridden.
+    3. If an element selector has a pseudoclass then its priority becomes higher.
+
+11. Inheritance and Universal selector
+    1. Its a good idea to add font related styles to the body tag. Mostly the properties related to text get inherited.
+    2. Properties can be overriden if the selector which comes after is trying to override a declaration. 
+    3. * Universal selector is used to apply styles to all the elements which do not get inherited.
+
+
