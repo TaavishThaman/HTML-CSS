@@ -92,7 +92,7 @@ Declaration Block-->  [
     5. Remember this by using LVHA notation.
 
 10. Conflicts between selectors
-    1. Highest to Lowest Priority : 
+    1. Highest to Lowest Priority (Specificity) : 
     !important -> Inline Style -> Id Selector -> Class Selector or Pseudoclass -> Element Selector -> Universal Selector.
     2. The styles which are crossed out in developer tools are the ones which are overridden.
     3. If an element selector has a pseudoclass then its priority becomes higher.
@@ -102,4 +102,45 @@ Declaration Block-->  [
     2. Properties can be overriden if the selector which comes after is trying to override a declaration. 
     3. * Universal selector is used to apply styles to all the elements which do not get inherited.
 
+12. CSS Box Model
+    1. Content : Text and Images
+    2. Border : A line around the element still inside the element.
+    3. Padding : Invisible space around the content and inside the element.
+    4. Margin : Space outside of the element, between elements.
+    5. Fill area : Area that gets filled with background image or background color. Basically everything inside and 
+       including the border.
+    6. Set margin : 0 and padding : 0 inside the universal selector to do a global reset before starting any project.
+    7. Use either margin-bottom or margin-top to create space between elements. Don't mix them up. Use margin-bottom 
+        if you can.
+    6. Collapsing margins: When two margins occupy the same space, they DO NOT get added up, instead the larger one of the
+        two is visible.
 
+13. Adding margins and padding
+    1. If you specify image dimensions in html and then if you specify only one of the dimensions (height / width) in
+    the css declaration then other must be set auto for automatic adjustment.
+
+14. Center the page
+    1. First wrap the entire page inside a div and set some width to that div which is less than 100%. Then apply 
+    margin : 0 auto; to center the container inside the page horizontally.
+    2. If we want to center a bunch of elements then set { text-align : center } property on the parent element.
+
+15. Types of elements
+    1. Block Level Elements : Occupy 100% of parent element's width(eg: p, div etc). Box model applies as shown to the 
+    block level elements.
+    2. Inline Elememts : Occupy only the space that is necessary for their content. They cause no line breaks. Box model 
+    applies differently. Heights and widths do not apply. Margin and Padding only apply horizontally.
+    3. Inline Block Elements : Best of both worlds. Cause no line breaks, occupy only the space that is required and
+    box model applies as shown.
+    4. Images are inline-block elements.
+
+16. Positioning in CSS
+    1. The parent element of the absolutely positioned element must be set relative and the child must be set absolute.
+
+17. Pseudo Elements
+    1. They are not actually elements but will behave as elements in html.
+    2. h1::first-letter {}. Using this syntax we can change the style of the first letter of the h1 however we want.
+    3. p::first-line {} will allow you to style the first line.
+    4. Adjacent Sibling Selector : h3+p::first-line {} Selects the first paragraph that comes after h3 tag.
+    5. Before and After Pseudo elements are used to add small elements after or before some element without adding 
+    additional element in the HTML flow.
+    6. Every pseudo element is an inline element so in order to apply box model to it normally we should
