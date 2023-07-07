@@ -1,0 +1,162 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family : sans-serif;
+}
+
+.container {
+    border : 5px solid black;
+    width : 700px;
+    margin : 100px auto 0 auto;
+}
+
+.header {
+    position: relative;
+}
+
+.header::before {
+    content : "SALE";
+    background-color: #D2042D;
+    position: absolute;
+    left : -30px;
+    top : -15px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color : #eee;
+    letter-spacing: 2px;
+}
+
+.heading {
+    text-align: center;
+    background-color: #DDD;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.price{
+    font-weight: 900;
+    margin-bottom : 5px;
+    float: left;
+}
+
+.shipping {
+    font-size: 9px;
+    text-transform: uppercase;
+    margin-top : 2px;
+    float: right;
+}
+
+.description {
+    font-size: 16px;
+    clear: both;
+}
+
+.colors {
+    margin-top: 20px;
+}
+
+.color-box {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.color-box:last-child {
+    margin-right: 0;
+}
+
+.color-box:nth-child(1) {
+    background-color: #111;
+}
+.color-box:nth-child(2) {
+    background-color: #5555FF;
+}
+.color-box:nth-child(3) {
+    background-color: #FF5555;
+}
+.color-box:nth-child(4) {
+    background-color: #FFAA00;
+}
+.color-box:nth-child(5) {
+    background-color: #55FF55;
+}
+.color-box:nth-child(6) {
+    background-color: #AA0000;
+}
+
+a:link {
+    color: #000;
+    font-size: 16px;
+}
+
+a:visited {
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color : #444;
+}
+
+.details-container {
+    margin-top : 20px;
+}
+
+li {
+    margin-left : 15px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom : 10px;
+    margin-top: 10px;
+    list-style-type: square;
+}
+
+.details-heading {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.btn {
+    border-radius : 0;
+    background-color: #000;
+    color: #CCC;
+    border-width : 0;
+    text-transform: uppercase;
+    width : 100%;
+    padding : 10px;
+    clear: both;
+}
+
+.product-img {
+    float: left;
+}
+
+.container_1 {
+    width : 240px;
+    float: left;
+    padding: 20px;
+    height : 200px;
+}
+
+.container_2 {
+    width : 240px;
+    float: right;
+}
+
+.clearfix::after {
+    clear : both;
+    content : '';
+    display: block;
+}

@@ -144,3 +144,32 @@ Declaration Block-->  [
     5. Before and After Pseudo elements are used to add small elements after or before some element without adding 
     additional element in the HTML flow.
     6. Every pseudo element is an inline element so in order to apply box model to it normally we should
+
+
+CSS Layouts
+
+1. Layout is the way that text, images and other content is arranged inside a webpage. We arrange web elements in a 
+    particular way instead of putting them one after another in a webpage. There are 3 ways of building layouts.
+
+    1. CSS Floats : This is the older way and is quickly being replaced.
+    2. CSS Flexbox : This is used to build 1 dimensional layout in a row.
+    3. CSS Grid : This is used to build complex 2 dimensional layouts. 
+
+2. Whenever you set an element to float, everything else that isn't set to float, floats around that element. Specifying
+    {float : left} will float the element to the left side of the container. And {float : right} will float the element
+    to the right side of the container. Setting an element to float will make it as element is not even in the page but 
+    they do have an impact on the surrounding inline elements and text unlike absolute positioning. Setting the element
+    as float will make it as its height and width are 0.
+
+3. Add clear property to an empty div or an already existing div to re-add height and width to floated elements. A better 
+    way would be to add clearfix class to the parent element and set a css like 
+    .clearfix::after {
+        clear : both;
+        content : '';
+        display: block;
+    }
+
+4. Adding box-sizing : border-box to an element changes its box model and the padding and border width does not affect the
+    height and width of the element anymore. Instead the height and the width remains the same and any padding that gets 
+    added might affect the content dimensions which are inside the box but not the overall dimensions. The default 
+    behaviour is called content-box but what we usually want is border-box.
