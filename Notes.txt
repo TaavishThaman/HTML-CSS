@@ -173,3 +173,46 @@ CSS Layouts
     height and width of the element anymore. Instead the height and the width remains the same and any padding that gets 
     added might affect the content dimensions which are inside the box but not the overall dimensions. The default 
     behaviour is called content-box but what we usually want is border-box.
+
+5. The container which has the display : flex property is called the flex container and its children are called 
+    flex-children. Each flex item only takes up the space that is necessary for the content. The max height of each
+    flex item depends upon the largest height among all flex items.
+    If you set align-items : center, it will center each flex item vertically. By default align-items is stretch. Align Items
+    can also be flex-start and flex-end.
+    If you set justify-content : center, it will center each flex item horizontally. justify-content could also be
+    set to space-between to set equal space between each flex item.
+
+6. Use align-self on the flex item to postion in inside the flex container.
+    Default order of every flex item is 0. Set order : -1 to bring it to the start.
+    Use gap property inside the flex container to add gap between flex items.
+    
+7. flex-basis : 100px gives width to each flex item. flex-shrink : 1 allows the flex item to shrink in order to fit the 
+    page. Setting flex-shrink : 0 will give the flex-basis width to each element even if they overflow. flex-grow 
+    property determines whether the flex-item is allowed to grow or not. Use flex : 1 instead of flex-grow or flex-shrink.
+    flex : flex-grow flex-shrink flex-basis shorthand. e.g. flex 0 1 200px;
+
+8. Just like in flexbox we have flex-container and flex-items, in CSS grid we have grid-container and grid items. Use 
+    display : grid to specify the display as grid and grid-template-columns : 250px 150px will create 2 columns of width 
+    250px and 150px and asjust all elements inside of it. grid-template-rows : 200px will give a height of 200px to the 
+    row. Use column-gap and row-gap properties to specify space between columns and rows.
+
+9. Grids contain grid lines which start from 1 to 1+numCols and 1+numRows which then divide the layout into grid cells.
+    Each grid cell may or may not contain some content. Gaps between grid columns and grid rows are called gutters.
+    Grid tracks are either an entire row or an entire columnn.
+
+10. Giving a column width as 1fr will make that column occupy all the available space. So use fr for column sizes instead
+    of pixel values. grid-template-columns : repeat(4, 1fr) means repeat a columns 4 times and give each one a width of 1fr.
+
+11. Placing and Spanning Items
+    grid-column : 2 / 3 : Start from column 2 and go till row 3. 
+    grid-row : 3 / -1 : Start from row 3 and go till end.
+    grid-row : 4 / span 2 : Start from row 4 and go ahead for 2 units. grid-row : 4 / 6 will also give the same results.
+
+12. Use justify-content to align tracks inside grid container horizontally.
+    Use align-content (NEW PROPERTY) to align tracks vertically inside grid container.
+    Instead of flex-start and flex-end just use start and end when using css grid.
+    Use align-items and justify-items (NEW PROPERTY) to move around the content inside grid cells.
+    Use align-self and justify-self to align items themselves. 
+
+13. Flexbox and Grid are supposed to work with each other. When working with just one row, use flexbox. When working with 
+    an entire page layout, use css grid.
