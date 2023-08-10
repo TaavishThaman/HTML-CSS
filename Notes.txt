@@ -216,3 +216,25 @@ CSS Layouts
 
 13. Flexbox and Grid are supposed to work with each other. When working with just one row, use flexbox. When working with 
     an entire page layout, use css grid.
+
+
+WEB DESIGN
+
+INGRIDIENTS OF WEB DESIGN
+
+1. Typography
+2. Colors
+3. Images/Illustrations
+4. Icons
+5. Shadows
+6. Border Radius
+7. Whitespace
+8. Visual Heirarchy
+9. User Experience
+10. Components/Layout
+
+Serif Typeface : Have decorative lines protruding out from characters.
+Sans-Serif Typeface : No decoration.
+Only use good and popular typefaces.
+
+Shadows can be used on both boxes and text.
