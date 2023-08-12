@@ -238,3 +238,31 @@ Sans-Serif Typeface : No decoration.
 Only use good and popular typefaces.
 
 Shadows can be used on both boxes and text.
+
+RESPONSIVE DESIGN:
+    Responsive web design has 4 ingridients:
+    1. Fluid Layouts:
+        To allow webpage to adapt to current viewport width or height.
+        Use % (or vh/vw) unit instead of px and use max-width instead of width.
+
+    2. Responsive Units:
+        Use rem unit instead of px for most lengths.
+        To make easy to scale the entire layout down or up automatically.
+        Set 1rem to 10px for easy calculations.
+
+    3. Flexible Images:
+        Images don't scale automatically as we change the viewport so we need to fix that.
+        Always use % for image dimensions, together with max-width property.
+
+    4. Media Queries:
+        Bring responsive sites to life.
+        To change CSS styles on certain viewport widths (called breakpoints).
+
+max-width:
+    If the width of the viewport is greater than the max-width property than the width of the element will become 
+    equal to the value of max-width property. On the other hand if the width of the viewport is smaller than the
+    max-width property value then the width of the element will become 100% the width of the viewport.
+
+rem:
+    By default 1rem is 16px but if you change font-size to 10px inside the html tag, 1rem would become 10px everywhere.
+    
