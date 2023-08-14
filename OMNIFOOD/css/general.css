@@ -53,6 +53,7 @@ html {
     /* 10px / 16px = .625 */
     /* Percentage of user's browser font-size setting */
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -61,6 +62,7 @@ body {
     font-weight: 400;
     color: #555;
     font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
 }
 
 /****************   *******************/
@@ -75,6 +77,7 @@ body {
     /*  Because we want it to be sticky later */
     height: 9.6rem;
     padding: 0 4.8rem;
+    position: relative;
 }
 
 .logo {
@@ -167,6 +170,7 @@ body {
     display: flex;
     align-items: center;
     gap: 1.6rem;
+    line-height : 1.2;
 }
 
 .container {

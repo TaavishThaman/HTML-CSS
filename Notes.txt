@@ -266,3 +266,14 @@ max-width:
 rem:
     By default 1rem is 16px but if you change font-size to 10px inside the html tag, 1rem would become 10px everywhere.
     
+
+Selecting breakpoints
+
+The perfect strategy to select breakpoints is by is to create a breakpoint whereever the design breaks(starts looking weird).
+And a good strategy is to select ranges of screen sizes. Combining both the strategies is necessary for building
+responsive design.
+
+rem has some bugs is some browsers when used in media queries. Hence em should be used instead of rem when dealing with
+media queries.
+
+one media query should work over the range of 200px to 300px.
